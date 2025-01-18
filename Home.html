@@ -1,0 +1,103 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1;">
+    <style>
+        /* General body styling */
+        body {
+            background: linear-gradient(to right, #1a1a1a, #333333);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed; /* Makes the navbar stick at the top */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Flexbox to arrange items horizontally */
+            justify-content: center; /* Centers the items horizontally */
+        }
+
+        nav ul li {
+            margin: 0 20px; /* Adds space between each link */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #f44336;
+        }
+
+        /* Centered text and image styling */
+        .centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: white;
+        }
+
+        /* Register Button Styling */
+        a:link, a:visited {
+            display: block;
+            margin: 20px auto;
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        a:hover, a:active {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="file:///C:/Users/Madha/OneDrive/Documents/PROJECTS/Register.html">Register</a></li>
+            <li><a href="file:///C:/Users/Madha/OneDrive/Documents/PROJECTS/About%20us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Section -->
+    <div id="home">
+        <h1>Tech Vayuna</h1>
+        <h2>Welcome to our event Techcon</h2>
+        <img src="c:\Users\Madha\Downloads\Techcon.jpg" alt="centered-image" class="centered-image">
+    </div>
+
+    <div id="register">
+        <a href="file:///C:/Users/Madha/OneDrive/Documents/PROJECTS/Register.html" target="_blank">Register Now</a>
+    </div>
+
+</body>
+</html>
