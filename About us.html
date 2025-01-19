@@ -1,23 +1,120 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1;">
- 
+    <link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
-    body {
-        background: linear-gradient(to right, #1a1a1a, #333333); ;
-        font-family: Arial, sans-serif;
-    }
+        body {
+        background: /*linear-gradient(to right, #1a1a1a, #333333);*/white; ;
+        font-family: 'Open Sans', sans-serif;
+        margin:0;
+        padding:0;
+        }
+
+        p {
+            color: black;
+            margin: 10px 0;
+            text-align: center;
+            font-weight:500;
+        }
+
+
+        nav {
+            background-color: aqua;
+           
+            position: fixed; /* Makes the navbar stick at the top */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Flexbox to arrange items horizontally */
+            justify-content: center; /* Centers the items horizontally */
+        }
+
+        nav ul li {
+            margin: 0 5px; /* Adds space between each link */
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #f44336;
+        }
+
+        /* Centered text and image styling */
+        .centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: black;
+            
+        }
+
+        /* Register Button Styling */
+        a:link, a:visited {
+            display: block;
+            margin: 20px auto;
+            color: black;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        a:hover, a:active {
+            background-color: blue;
+        }
+        
+        .para{
+            color: white;
+            text-align: center;
+            margin-left: 5px ;
+            margin-right: 5px;
+        }
     </style>
 
 </head>
-   
-<h1 style="text-align:center;color:white;">Tech Vayuna</h1>
-<h2 style="text-align:center;color:white;">Welcome to our event Techcon </h2>    
-<h3 style="text-align:center;color:white;">About our club</h3>
-<p style="text-align:center;color:white;">Club Tech Vayuna is a dynamic and innovative tech-focused community dedicated to bringing together enthusiasts, professionals, and creatives from the world of technology.</p>
-<p style="text-align:center;color:white;">With a focus on collaboration, learning, and growth, 
-Vayuna offers a platform for sharing knowledge, exploring new technologies, and driving innovation in various fields.</p>
-<p style="text-align:center;color:white;">Whether through events, workshops, or online discussions,
-Club Tech Vayuna strives to inspire its members and foster a spirit of innovation.</p>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="./Register.html">Register</a></li>
+            <li><a href="./About%20us.html">About Us</a></li>
+        </ul>
+    </nav>
 
-    
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 style="text-align:center;color:black;">Tech Vayuna</h1>
+<h2 style="text-align:center;color:black">Welcome to our event Techcon </h2>    
+<h3 style="text-align:center;color:black;">About our club</h3>
+<div class="para">
+    <p>Club Tech Vayuna is a dynamic and innovative tech-focused community dedicated to bringing together enthusiasts, professionals, and creatives from the world of technology.</p>
+    <p>With a focus on collaboration, learning, and growth,Vayuna offers a platform for sharing knowledge, exploring new technologies, and driving innovation in various fields.</p>
+    <p >Whether through events, workshops, or online discussions,Club Tech Vayuna strives to inspire its members and foster a spirit of innovation.</p>
+</div>
+</body>
+</html>
+

@@ -1,11 +1,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1;">
-    <link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background: white;
-            font-family: 'Open Sans', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -14,12 +13,11 @@
             justify-content: flex-start;
             min-height: 100vh;
         }
-
         p {
             color: black;
-            margin: 5px 0; /* Adjusts space between label and input */
+            text-align: center;
+            margin:5px 0;
         }
-
         nav {
             background-color: aqua;
             position: fixed; /* Makes the navbar stick at the top */
@@ -28,19 +26,16 @@
             z-index: 1000;
             text-align: center;
         }
-
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
-            display: flex;
-            justify-content: center;
+            display: flex; /* Flexbox to arrange items horizontally */
+            justify-content: center; /* Centers the items horizontally */
         }
-
         nav ul li {
-            margin: 0 5px;
+            margin: 0 20px; /* Adds space between each link */
         }
-
         nav ul li a {
             color: black;
             text-decoration: none;
@@ -49,7 +44,6 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-
         nav ul li a:hover {
             background-color: #f44336;
         }
@@ -57,15 +51,23 @@
         h1, h2 {
             text-align: center;
             color: black;
-            font-family: 'Open Sans', sans-serif;
         }
 
         .form-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 100px;
+            margin-top: 100px; /* Adjusts the space from top for the form */
         }
+
+        .form-container input {
+            margin: 10px 0; /* Space between the input fields */
+            padding: 10px;
+            font-size: 16px;
+            width: 300px; /* Adjust width as needed */
+        }
+
+        /* Register Button Styling */
         a:link, a:visited {
             display: block;
             margin: 20px auto;
@@ -78,8 +80,14 @@
         a:hover, a:active {
             background-color: blue;
         }
+        
+        .center-textbox {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
 
-        .form-group {
+        form-group {
             display: flex;
             flex-direction: column;
             align-items: flex-start; /* Align label to top-left */
@@ -112,9 +120,9 @@
 <body>
     <nav>
         <ul>
-            <li><a href="./Home.html">Home</a></li>
-            <li><a href="./Register.html">Register</a></li>
-            <li><a href="./About%20us.html">About Us</a></li>
+            <li><a href="file:///C:/Users/Madha/OneDrive/Documents/PROJECTS/Tech%20Vayuna%20Website/Home.html">Home</a></li>
+            <li><a href="file:///C:/Users/Madha/OneDrive/Documents/PROJECTS/Tech%20Vayuna%20Website/Register.html">Register</a></li>
+            <li><a href="file:///C:/Users/Madha/OneDrive/Documents/PROJECTS/Tech%20Vayuna%20Website/About%20us.html">About Us</a></li>
         </ul>
     </nav>
 
@@ -122,29 +130,30 @@
         <h1>Tech Vayuna</h1>
         <h2>Welcome to our event Techcon</h2>
         
-        <!-- Name Field -->
+      
         <div class="form-group">
             <p>Name:</p>
             <input type="text" />
         </div>
 
-        <!-- Email Field -->
+        
         <div class="form-group">
             <p>Email Id:</p>
             <input type="text" />
         </div>
 
-        <!-- Register No Field -->
+        
         <div class="form-group">
             <p>Register No:</p>
             <input type="text" />
         </div>
 
-        <!-- Confirm Button -->
+        
         <div>
             <button id="myfunction">Confirm</button>
         </div>
     </div>
+
 
     <script>
         // Link the button to the function using event listener
@@ -153,4 +162,4 @@
         });
     </script>
 </body>
-</html>
+</html> 
